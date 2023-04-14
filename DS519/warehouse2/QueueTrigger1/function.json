@@ -1,0 +1,21 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "myqueue-519",
+      "connection": "queueConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputDocument",
+      "databaseName": "assignment4-db",
+      "collectionName": "DATA",
+      "createIfNotExists": true,
+      "connectionStringSetting": "cosmosDBConnectionString"
+    }
+  ]
+}
